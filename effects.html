@@ -1,0 +1,157 @@
+<html>
+<head>
+
+    <script type="text/javascript" src="create%20and%20move%20line.js"></script>
+    <script type="text/javascript">
+
+        function init() {
+            //cssEffects.flowTextOnHover("css-effect[name]", "effect", "effectColor","textColor");
+            cssEffects.flowTextLoop("flowTextNeonLoop", "neon", "#00ffff","white");
+            cssEffects.flowTextOnHoverForFXId("flowTextFireHover", "fire", "","");
+            cssEffects.flowTextOnHoverForFXId("flowTextShadowHover", "shadow", "#ff0000","black");
+            cssEffects.flowTextOnHoverForFXId("flowTextBorderHover", "border", "#ff0000","black");
+            cssEffects.flowTextOnHoverForFXId("flowTextGlowHover", "glow", "#ff0000","black");
+            cssEffects.flowTextOnHoverForFXId("flowTextVintageHover", "vintage", "#ffffff","#39414A");
+//linefor function
+//loop, line, once,toggle --> they all create cross line on hover
+            cssEffects.addBorderToObject("crossBorderLoop", "loop");
+            cssEffects.addBorderToObject("crossBorderLine", "line");
+            cssEffects.addBorderToObject("crossBorderToggle", "toggle");
+            cssEffects.addBorderToObject("crossBorder", "once");
+            cssEffects.headline(145);
+            //createHorizontalLine(x, y,length, travelDistance, "rgb(255,255,0)", "loop", "left");
+            //createVerticalLine(500, 300, 100, 150, "rgb(255,0,0)", "loop", "top");
+            //createVerticalLine(550, 100, 100, 150, "rgb(0,255,0)", "loop", "bottom");
+            //createVerticalLine(600, 100, 100, 300, "rgb(0,0,255)", "toggle", "bottom");
+
+
+            //createHorizontalLine(1154, 110, 150, 550, "rgb(255,255,0)", "cross", "left");
+            //createHorizontalLine(586, 40, 100, 550, "rgb(0,255,255)", "cross", "right");
+
+
+            //createHorizontalLine(50, 200, 200, 500, "rgb(255,0,255)", "toggle", "right");
+
+            //createFlag("germany");
+            //createFlag("spain");
+            //createFlag("austria");
+            //createRandomLine("rgb(0,0,255)");
+        }
+
+    </script>
+    <link rel="stylesheet" href="effects.css">
+
+
+</head>
+<body onload="init();">
+
+<table>
+    <tr>
+        <td>
+            <div class="demoBox" css-effect="crossBorderLoop"></div>
+        </td>
+        <td>
+            addBorderToObject("#crossBorderLoop", "loop");
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="demoBox" css-effect="crossBorderLine"></div>
+        </td>
+        <td>
+            addBorderToObject("#crossBorderLine", "line");
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="demoBox" css-effect="crossBorderToggle"></div>
+        </td>
+        <td>
+            addBorderToObject("#crossBorderToggle", "toggle");
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="demoBox" css-effect="crossBorderOnce"></div>
+        </td>
+        <td>
+            addBorderToObject("#crossBorder", "once");
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table style="background:black;">
+                <tr>
+                    <td>
+                        <div class="whiteText demoHeadlineBox " css-effect="headline">This is a headline demonstration!!! </div>
+
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <div class="demoHeadlineBox fire" css-effect="headline">This is a fire headline demonstration!!!</div>
+            <div class="demoHeadlineBox letterpress" css-effect="headline">letterpress letterpress letterpress</div>
+
+        </td>
+        <td>
+            cssEffects.headline(145);cssEffects.headline(145);cssEffects.headline(145);
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="demoBox" css-effect="flowTextNeonLoop">TextNeon TextNeon TextNeon TextNeon</div>
+        </td>
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="demoBox" css-effect="flowTextFireHover">This is a flowTextFireHover demonstration!!!</div>
+        </td>
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="demoBox" css-effect="flowTextShadowHover">TextShadow TextShadow TextShadow TextShadow</div>
+        </td>
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="demoBox" css-effect="flowTextBorderHover">TextBorder TextBorder TextBorder TextBorder</div>
+        </td>
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="demoBox" css-effect="flowTextGlowHover">TextGlow TextGlow TextGlow TextGlow</div>
+        </td>
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="demoBox" css-effect="flowTextVintageHover">TextVintage TextVintage TextVintage TextVintage</div>
+        </td>
+        <td>
+
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
